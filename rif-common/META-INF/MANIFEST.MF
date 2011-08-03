@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rif-common
+Bundle-SymbolicName: rif-common
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.rif.common,
+ com.rif.common.exception,
+ com.rif.common.impl,
+ com.rif.common.naming,
+ com.rif.common.request,
+ com.rif.common.response,
+ com.rif.common.response.impl,
+ com.rif.common.serializer,
+ com.rif.common.serializer.impl,
+ com.rif.common.util
