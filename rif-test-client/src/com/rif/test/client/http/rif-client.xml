@@ -1,0 +1,21 @@
+<rif-client>
+	<transport-refs>
+		<transport-ref id="transport1" type="http" serializer="xml">
+			<url>http://127.0.0.1:8080/rif</url>
+			<security></security>
+		</transport-ref>
+		<transport-ref id="transport2" type="tcp" serializer="json">
+			<url>127.0.0.1:8090</url>
+			<security></security>
+		</transport-ref>
+	</transport-refs>
+	<service-refs>
+			<service-ref id="helloserviceRef">
+				<service-name>com.rif.helloservice.HelloServiceImpl</service-name>
+				<service-version>1.0.0</service-version>
+				<description>hello service</description>
+				<transport-id>transport1</transport-id>
+				<serializer>xml</serializer>
+			</service-ref>
+	</service-refs>	
+</rif-client>
