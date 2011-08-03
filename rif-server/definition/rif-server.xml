@@ -1,0 +1,21 @@
+<rif-server>
+	<transports>
+        <transport id="transportHTTP" type="http">
+            <url>http://127.0.0.1:8080/rif</url>
+        </transport>
+        <transport id="transportTCP" type="tcp">
+            <url>127.0.0.1:9080</url>
+        </transport>
+    </transports>
+    <services>
+			<service name="com.rif.helloservice.HelloServiceImpl" version="1.0.0" serializer="xml">
+				<description>hello service</description>
+				<transport-id>transportHTTP</transport-id>
+				<implement.pojo class="com.rif.helloservice.HelloServiceImpl" />
+				<!--
+				<implement.spring bean-id="helloserviceBean" />
+				<implement.bpel process="MoneyTransferProcess" />
+				-->
+			</service>
+	</services>	
+</rif-server>
