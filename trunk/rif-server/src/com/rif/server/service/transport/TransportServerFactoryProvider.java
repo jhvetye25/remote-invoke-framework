@@ -6,7 +6,11 @@ import java.util.ServiceLoader;
 
 import com.rif.server.service.definiton.TransportModel;
 
-
+/**
+ * 
+ * @author bruce.liu (mailto:jxta.liu@gmail.com)
+ * 2011-8-3 下午08:57:34
+ */
 public class TransportServerFactoryProvider {
     public static TransportServerFactoryProvider INSTANCE = new TransportServerFactoryProvider();
     private static List<ITransportServerFactory> transportServerFactoryList = new ArrayList<ITransportServerFactory>();
