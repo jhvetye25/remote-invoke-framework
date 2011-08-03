@@ -8,6 +8,11 @@ package com.rif.server.service.transport;
 
 import com.rif.server.service.definiton.TransportModel;
 
+/**
+ * 
+ * @author bruce.liu (mailto:jxta.liu@gmail.com)
+ * 2011-8-3 下午08:57:46
+ */
 public interface ITransportServerFactory {
     boolean accept(String type);
     ITransportServer create(TransportModel model);
