@@ -1,0 +1,2 @@
+com.rif.server.service.finder.impl.PojoServiceFinderImpl
+com.rif.server.service.finder.impl.SpringServiceFinderImpl
