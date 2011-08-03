@@ -1,0 +1,2 @@
+com.rif.common.serializer.impl.JsonDataSerializerImpl
+com.rif.common.serializer.impl.XmlDataSerializerImpl
