@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rif-client-http
+Bundle-SymbolicName: rif-client-http
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.rif.client.service,
+ com.rif.client.service.dataexchange,
+ com.rif.client.service.definition,
+ com.rif.client.service.transport,
+ com.rif.common.request,
+ com.rif.common.serializer,
+ com.rif.common.util
