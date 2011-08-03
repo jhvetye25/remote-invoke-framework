@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rif-server-http
+Bundle-SymbolicName: rif-server-http
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.rif.common.request,
+ com.rif.common.response,
+ com.rif.common.serializer,
+ com.rif.common.util,
+ com.rif.server.service,
+ com.rif.server.service.definiton,
+ com.rif.server.service.manager,
+ com.rif.server.service.parser,
+ com.rif.server.service.server
