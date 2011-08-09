@@ -27,13 +27,13 @@ V0.1版本说明(2011.08)
 	c)支持其它类型协议的扩展开发
 
 四：工程源码
-	/rif-client			:客户端框架项目
+	/rif-client		:客户端框架项目
 	/rif-client-http	:客户端http协议的实现
-	/rif-client-lib		:客户端依赖的第三方jar包
-	/rif-server			:服务端框架项目
+	/rif-client-lib	:客户端依赖的第三方jar包
+	/rif-server		:服务端框架项目
 	/rif-server-http	:服务端http协议实现
-	/rif-lib			:服务端依赖的第三方jar包
-	/rif-common			:客户端、服务端统一依赖的基础项目
+	/rif-lib		:服务端依赖的第三方jar包
+	/rif-common	:客户端、服务端统一依赖的基础项目
 	/rif-test-client	:测试-客户端示例项目
 	/rif-test-server	:测试-服务端示例项目
 
