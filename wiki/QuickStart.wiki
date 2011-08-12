@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+#summary 快速入门文档.
 
-= Introduction =
+= 服务端示例 =
 
-Add your content here.
+如何将POJO发布为远程服务
 
 
 = Details =
