@@ -1,6 +1,6 @@
 #summary 快速入门文档.
 
-= 服务端示例 =
+= 服务端示例(POJO发布为http类型的服务) =
 
 将POJO发布为远程服务。
 本文提供快速入门的Hello服务。
@@ -92,7 +92,7 @@ http协议目前支持与web容器集成，需要配置web.xml文件。
 </web-app>
 }}}
 
-= Details ==
+= 客户端开发 ==
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
