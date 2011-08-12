@@ -1,4 +1,5 @@
 #summary 版本说明.
+#labels Phase-Requirements
 {{{
 V0.1版本说明(2011.08)
 一：RIF(Remote Invoke Framework)
