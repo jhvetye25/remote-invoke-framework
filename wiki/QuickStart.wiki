@@ -158,4 +158,4 @@ Hello,rif
 }}}
 
 
-so easy.
+so easy.开始使用RIF框架吧。
