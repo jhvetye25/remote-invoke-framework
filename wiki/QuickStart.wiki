@@ -1,6 +1,6 @@
 #summary 快速入门文档.
 
-= 服务端示例(POJO发布为http类型的服务) =
+= 服务端开发(POJO发布为http类型的服务) =
 
 将POJO发布为远程服务。
 本文提供快速入门的Hello服务。
@@ -94,7 +94,61 @@ http协议目前支持与web容器集成，需要配置web.xml文件。
 
 = 客户端开发 ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== 1、配置客户端文件rif-client.xml文件 ==
+{{{
+<rif-client>
+	<transport-refs>
+		<transport-ref id="transport1" type="http" serializer="xml">
+			<url>http://127.0.0.1:8080/rif</url>
+			<security></security>
+		</transport-ref>
+	</transport-refs>
+	<service-refs>
+			<service-ref id="helloserviceRef">
+				<service-name>com.rif.helloservice.HelloServiceImpl</service-name>
+				<service-version>1.0.0</service-version>
+				<description>hello service</description>
+				<transport-id>transport1</transport-id>
+				<serializer>xml</serializer>
+			</service-ref>
+	</service-refs>	
+</rif-client>
+}}}
+
+== 2、客户端代码 ==
+
+{{{
+package com.rif.test.client.http;
+
+import com.rif.client.service.IServiceClient;
+import com.rif.client.service.ServiceClientFactory;
+import com.rif.helloservice.IHelloService;
+
+/**
+ * @author bruce.liu (mailto:jxta.liu@gmail.com)
+ * 2011-8-1 下午10:09:43
+ */
+public class HelloServiceClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ServiceClientFactory factory = new ServiceClientFactory();
+
+		factory.setConfigPaths(new String[]{HelloServiceClient.class.getResource("rif-client.xml").toString()});
+		factory.init();
+		IServiceClient client = factory.getServiceClient();
+		IHelloService helloService = client.getService("helloserviceRef", IHelloService.class);
+		String result = helloService.sayHello("rif");
+		System.out.println(result);
+	}
+
+}
+
+==3、运行结果==
+
+{{{
+Hello,rif
+}}}
+}}}
