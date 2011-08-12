@@ -17,8 +17,45 @@ public interface IHelloService {
 }
 }}}
 ==2、定义实现==
-==3、发布为服务==
+{{{
+package com.rif.helloservice.impl;
 
+import com.rif.helloservice.IHelloService;
+
+/**
+ * @author bruce.liu (mailto:jxta.liu@gmail.com)
+ * 2011-7-20 下午11:07:28
+ */
+public class HelloServiceImpl implements IHelloService {
+
+	/* (non-Javadoc)
+	 * @see com.rif.helloservice.IHelloService#sayHello(java.lang.String)
+	 */
+	@Override
+	public String sayHello(String name) {
+		// TODO Auto-generated method stub
+		return "Hello,"+name;
+	}
+
+}
+}}}
+==3、发布为服务==
+将上面定义的POJO类直接发布为远程服务，增加配置文件：rif-server.xml
+{{{
+<rif-server>
+	<services>
+			<service name="com.rif.helloservice.HelloServiceImpl" version="1.0.0" serializer="xml">
+				<description>hello service</description>
+				<transport-id>transportHello</transport-id>
+				<implement.pojo class="com.rif.helloservice.impl.HelloServiceImpl" />
+				<!--
+				<implement.spring bean-id="helloserviceBean" />
+				<implement.bpel process="MoneyTransferProcess" />
+				-->
+			</service>
+	</services>	
+</rif-server>
+}}}
 = Details ==
 
 Add your content here.  Format your content with:
