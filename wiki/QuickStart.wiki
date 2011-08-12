@@ -1,6 +1,7 @@
 #summary 快速入门文档.
+#labels Phase-Implementation
 
-5分钟快速入门文档，将POJO快速发布为HTTP的远程 服务。
+5分钟快速入门文档，将POJO快速发布为HTTP的远程服务。
 
 = 一：服务端开发(POJO发布为http类型的服务) =
 
