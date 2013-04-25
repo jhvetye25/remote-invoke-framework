@@ -16,10 +16,6 @@ import com.rif.server.service.finder.IServiceFinder;
 public class SpringServiceFinderImpl extends AbstractNamingObject implements
 		IServiceFinder {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 353014585104487138L;
 
 	public SpringServiceFinderImpl(){
 		this.setName(SpringServiceFinderImpl.class.getName());

@@ -16,11 +16,6 @@ import com.rif.server.service.helper.ClassHelper;
  * 2011-7-15 上午12:03:36
  */
 public class PojoServiceFinderImpl extends AbstractNamingObject implements IServiceFinder {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -9210952451804107976L;
-
 	public PojoServiceFinderImpl(){
 		this.setName(PojoServiceFinderImpl.class.getName());
 	}
